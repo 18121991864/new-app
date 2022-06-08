@@ -1,0 +1,40 @@
+header {
+  color: whitesmoke;   
+  .hearder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 50px;
+    background: #051537; 
+    z-index: 999;
+    .jump {
+      z-index: 1;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .b_c_c {
+      z-index: 1;
+      display: flex;
+      font-size: 16px;
+      font-weight: 900;
+      .padding_l,.padding_l_r {
+        padding-left: 40px;
+      }
+      @media (max-width: 750px) {
+        .padding_l_r {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1067px) {
+    .hearder {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+    }
+  }
+}

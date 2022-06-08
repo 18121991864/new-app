@@ -1,0 +1,103 @@
+footer {
+  color: whitesmoke;
+  .footer_box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 78px;
+    // padding-top: 400px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    .footer_top {
+      flex: 1;
+      border: 1px solid #4B608D;
+      background: #051537;
+      .jump_compositions_box {
+        display: flex;
+        justify-content: flex-end;
+        height: 300px;
+        font-size: 16px;
+        font-weight: 400;
+        .jump {
+
+        }
+        .compositions {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+        .jump,.compositions {
+          padding-right: 40px;
+          padding-top: 30px;
+          div {
+            margin-bottom: 15px;
+          }
+          p:hover {
+            cursor: pointer;
+            text-decoration: underline #fff;
+          }
+        }
+      }
+      @media (max-width: 1067px) {
+        .jump_compositions_box {
+          display: block;
+          height: 600px;
+          .jump {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+    .footer_middle {
+      display: flex;
+      justify-content: end;
+      flex: 1;
+      border: 1px solid #4B608D;
+      border-top: none;
+      background: #051537;
+      .footer_middle_left {
+        height: 57px;
+      }
+      .footer_middle_right {
+        min-width: 170px;
+        border-left: 1px solid #4B608D;
+      }
+    }
+    .footer_bottom {
+      color: #2E4B7F;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding-top: 10px;
+      div {
+        :nth-child(1):hover {
+          cursor: pointer;
+          color: #F9F7F4;
+        }
+        :nth-child(2):hover {
+          cursor: pointer;
+          color: #F9F7F4;
+        }
+      }
+      p:hover {
+        color: #F9F7F4;
+      }
+    }
+  }
+  @media (max-width: 1067px)  {
+    .footer_box {
+      padding-left: 20px;
+      padding-right: 20px;
+      .footer_bottom {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 1067px) {
+  body {
+    background-color: #051537;
+  }
+}
+ 
