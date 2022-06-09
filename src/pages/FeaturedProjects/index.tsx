@@ -2,6 +2,7 @@ import React, { useRef } from "react"
 import styles from './index.less';
 import { Button } from 'antd'
 import { useSize } from 'ahooks'
+import { nanoid } from 'nanoid'
 import BoxLinkItem from '@/components/BoxLinkItem'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -64,7 +65,7 @@ export default function IndexPage() {
               <div className={styles.links_box}>
                 {
                   imgUrls.map((item: any) => { 
-                    return <BoxLinkItem key={item}>
+                    return <BoxLinkItem key={nanoid()}>
                       <img src={item} alt="" style={{width: 100, height: 25}}/>
                     </BoxLinkItem>
                   })

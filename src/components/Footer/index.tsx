@@ -1,4 +1,5 @@
 import React from 'react'
+import { history } from 'umi'
 import styles from './index.less'
 
 export default function index(props: any) {
@@ -7,7 +8,18 @@ export default function index(props: any) {
       <div className={styles.footer_box} style={props?.style}>
         <div className={styles.footer_top}>
           <div className={styles.jump_compositions_box}>
-            <div  className={styles.jump}>
+            <div>
+              <div style={{width: 200, height: 100,display: "flex", justifyContent: "center", alignItems: "center"}}>
+                <div className={styles.img} onClick={() => { 
+                  window.location.href = 'https://twitter.com/Upbitventure'
+                }}>
+              </div>
+              </div>
+              <div style={{marginTop: 25}}>
+                jongmin@upbitventure.com
+              </div>
+            </div>
+            {/* <div  className={styles.jump}>
               <div style={{color: "#1CE7C2"}}>jump_</div>
               <p>Builds</p>
               <p>Compositions</p>
@@ -22,7 +34,7 @@ export default function index(props: any) {
               <p>Spotlights</p>
               <p>News</p>
               <p>Podcasts</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.footer_middle}>
