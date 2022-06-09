@@ -25,7 +25,9 @@ export default function index(props: any) {
         <div className={styles.jump} onClick={() => { 
             history?.push('/')
             scrollTop.scrollTop = 0
-           }}>jump<span style={{color: "#1CE7C2"}}>_</span></div>
+           }}>
+             <h2 style={{width: 200, height: 40, opacity: 0}}>UPbit</h2>
+        </div>
         <div  className={styles.b_c_c}>
           <div className={styles.padding_l} onClick={() => { 
             history?.push('/featured-projects')
